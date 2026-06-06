@@ -17,8 +17,8 @@ function ReactMemo() {
   const [error, setError] = useState("");
 
   const addSkill = useCallback(() => {
-    if (inputValue.length <= 5) {
-      setError("Input must be more than 5 characters.");
+    if (inputValue.length <= 3) {
+      setError("Input must be more than 3 characters.");
       return;
     }
     setSkills((prev) => [...prev, inputValue]);
